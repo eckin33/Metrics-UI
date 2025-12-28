@@ -328,7 +328,7 @@ function App() {
   const [logado, setLogado] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Metrics-UI'>
       <Routes>
         <Route
           path="/Metrics-UI/"

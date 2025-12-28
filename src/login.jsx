@@ -33,7 +33,6 @@ const Login = (props) => {
             let userName = result.user.name
             localStorage.setItem("userLogado", userName)
             localStorage.setItem("token", meuToken)
-            alert("Login realizado com sucesso!")
             setLogado(true);
             setLoad(false)
             navigate('/dashboard');
