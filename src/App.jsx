@@ -333,7 +333,7 @@ function App() {
         <Route
           path="/Metrics-UI/"
           element={<Login setLogado={setLogado} logado={logado} />} />
-        <Route path="/Metrics-UI/dashboard"
+        <Route path="/dashboard"
           element={
             <PrivateRoute logado={logado}>
               <Dashboard />
