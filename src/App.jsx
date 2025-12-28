@@ -331,9 +331,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/Metrics-UI/"
           element={<Login setLogado={setLogado} logado={logado} />} />
-        <Route path="/dashboard"
+        <Route path="/Metrics-UI/dashboard"
           element={
             <PrivateRoute logado={logado}>
               <Dashboard />
