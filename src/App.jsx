@@ -328,12 +328,12 @@ function App() {
   const [logado, setLogado] = useState(false);
 
   return (
-    <BrowserRouter basename='/Metrics-UI'>
+    <BrowserRouter>
       <Routes>
         <Route
-          path="/Metrics-UI/"
+          path="/"
           element={<Login setLogado={setLogado} logado={logado} />} />
-        <Route path="/Metrics-UI/dashboard"
+        <Route path="/dashboard"
           element={
             <PrivateRoute logado={logado}>
               <Dashboard />
