@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './App.css'
-import Login from './Login.Jsx'
+import Login from './login.Jsx'
 import PrivateRoute from './privateRoute';
 import { Chart as ChartJS, defaults, Legend } from 'chart.js/auto';
 import { Bar, Doughnut, Line, Pie } from 'react-chartjs-2';
@@ -331,9 +331,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/Metrics-UI/"
           element={<Login setLogado={setLogado} logado={logado} />} />
-        <Route path="/dashboard"
+        <Route path="/Metrics-UI/dashboard"
           element={
             <PrivateRoute logado={logado}>
               <Dashboard />
