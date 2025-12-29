@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './App.css'
-import Login from './login.Jsx'
+import Login from './Login_temp.jsx'
 import PrivateRoute from './privateRoute';
 import { Chart as ChartJS, defaults, Legend } from 'chart.js/auto';
 import { Bar, Doughnut, Line, Pie } from 'react-chartjs-2';
